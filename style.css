@@ -1,0 +1,138 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
+ }
+
+ body {
+     height: 100vmin;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: #F3F2F1;
+ }
+
+ .card-container {
+     max-width: 58vh;
+     width: 100%;
+     padding:5vh;
+     background-color: #fff;
+     border-radius: 4vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+ }
+
+ .card-container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #4070F4;
+    height: 36%;
+    width: 100%;
+    border-radius: 4vh 4vh 0 0;
+ }
+
+ .img-cont {
+     position: relative;
+     height: 24vmin;
+     width: 24vmin;
+     border-radius: 50%;
+     background-color: #4070F4;
+     padding: 0.5vmin;
+ }
+
+ .img-cont .image {
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+     border-radius: 50%;
+     border: 2px solid#fff;
+ }
+
+ .card-container .about {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 15px;
+ }
+
+ .about .name {
+     font-size: 3vmin;
+     font-weight: 550;
+ }
+
+ .about .work {
+     font-size: 2vmin;
+     font-weight: 400;
+ }
+
+ .social-media-links{
+    display: flex;
+ }
+
+ .social-media-links .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 12px;
+    height: 34px;
+    width: 34px;
+    font-size: 18px;
+    border-radius: 50%;
+    text-decoration: none;
+    /* background-color: #4070F4; */
+    color: #fff;
+ }
+
+ .card-container .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+ }
+
+ .buttons .btn{
+    border: none;
+    background-color: #4070F4;
+    margin: 0px 10px;
+    padding: 8px 24px;
+    border-radius: 4vh;
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+ }
+
+ .buttons .btn:hover{
+    background-color: #0e4bf1;
+ }
+
+ .card-container .analytics-info{
+    display: flex;
+    align-items: center;
+    margin-top: 4vh;
+ }
+
+ .analytics-info .data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    padding: 0 20px;
+    border-right: 2px solid #E4E3E4;
+    font-size: 16px;
+    margin-right: 6px;
+ }
+
+ .data:last-child{
+    border-right: none;
+ }
